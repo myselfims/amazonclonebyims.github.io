@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 0.3vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    position: fixed;
+    margin-top: -8vh;
+    z-index: 10;
+}
+.logodiv{
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    margin-right: 0.2vw;
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 0.1vw;
+    padding: 0.3vw;
+}
+.logodiv:hover{
+    border: 0.1vw solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.in{
+    display: inline;
+    align-self: center;
+}
+.afterlogo{
+    font-size: 0.9vw;
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 0.1vw;
+    padding: 1vh;
+}
+.afterlogo:hover{
+    border: 0.1vw solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.hellotext{
+    display: block;
+}
+
+.logo{
+    width: 7vw;
+    display: inline;
+}
+.locationicon{
+    display: inline;
+}
+.searchbar{
+    display: inline-flex;
+    background-color: white;
+    height: 6vh;
+    width: 55vw;
+    border-radius: 0.5vw;
+    margin-left: 1vw;
+    align-self: center;
+    border: 0.2vw solid black;
+}
+.searchbox{
+    width: 48vw;
+    font-size: 1vw;
+    border: 0;
+}
+.gobtn{
+    background: url("Images/search icon.png");
+    width: 4vw;
+    float: right;
+    background-size: 2vw;
+    background-color: rgb(249, 216, 84);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0vw 0.5vw 0.5vw 0vw;
+    border: white;
+    cursor: pointer;
+}
+.categorylist{
+    margin: 0;
+    padding: 0;
+    border-radius: 0.5vw 0vw 0vw 0.5vw;
+    background-color: rgb(226, 226, 226);
+    border: 0;
+}
+.categorylist:hover{
+    background-color: rgba(186, 185, 185, 0.767);
+    cursor: pointer;
+}
+option{
+    background-color: white;
+}
+.flagspan{
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 1vw;
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 0.1vw;
+}
+.flag{
+    width: 1.5vw;
+}
+.flagspan:hover{
+    border: 0.1vw solid white;
+    cursor: pointer;
+}
+.signtext{
+    display: block;
+}
+.signdiv{
+    font-size: 0.9vw;
+    border: 0.1vw solid rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 0.2vw;
+    padding: 1vh;
+}
+.signdiv:hover{
+    border: 0.1vw solid white;
+    cursor: pointer;
+}
+.returndiv{
+    font-size: 0.9vw;
+    border: 0.1vw solid rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 0.2vw;
+    padding: 1vh;
+}
+.returndiv:hover{
+    border: 0.1vw solid white;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    border: 0.1vw solid rgb(0, 0, 0);
+    border-radius: 0.1vw;
+    padding-right: 0.6vw;
+}
+.cart:hover{
+    border: 0.1vw solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.cartvalue{
+    margin-left: -1.6vw ;
+    color: orange;
+    margin-bottom: 3vh;
+}
+.carticon{
+    width: 3vw;
+    display: inline;
+    margin-left: 0.5vw;
+}
+.carttext{
+    display: inline-flex;
+    margin-top: 3.3vh;
+    margin-left: 0.5vw;
+}
+.secondnav{
+    background-color: rgb(52, 71, 75);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    padding: 0.3vh;
+    font-family: 'Karla', sans-serif;
+    margin-top: 8vh;
+}
+.secondnavlist{
+    color: white;
+    display: inline;
+    margin: 0.1vw;
+    border: 0.1vw solid rgb(52, 71, 75);
+    border-radius: 0.1vw;
+    padding: 0.6vh;
+ 
+}
+.secondnavlist:hover{
+    border: 0.1vw solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.backgroundimage{
+    width: 99vw;
+    cursor: pointer;
+}
+.prodcont{
+    display: flex;
+    margin-top: -50vh;
+}
+.products{
+    background-color: white;
+    margin: 0.7vw;
+    height: 60vh;
+    width: 22vw;
+    font-size: 0.8vw;
+    font-family: 'Karla', sans-serif;
+    padding: 1vw;
+}
+.productsimage{
+    width: 8.5vw;
+    margin-top: 0.4vw;
+    height: 14vh;
+    margin-right: 0.9vw;
+}
+.productsimage:hover{
+    box-shadow: 0vw 0vw 0.6vw 0.1vw;
+    cursor: pointer;
+}
+.productpics{
+    display: inline-block;
+    margin: 0.5vw;
+}
+.signindiv{
+    background-color: white;
+    margin-top: 1.5vh;
+    padding: 1vw;
+    font-family: 'Karla', sans-serif;
+    height: 23vh;
+    margin: 0.7vw;
+   
+
+}
+.signindiv h1{
+    font-size: 1.5vw;
+}
+.signinbtn{
+    width: 20vw;
+    background-color: rgb(249, 216, 84);
+    margin-top: 3vh;
+    height: 4vh;
+    border-radius: 0.5vw;
+}
+#focus{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.409);
+    margin-top: 0vh;
+    visibility: hidden;
+}
+#leftbtn{
+    float: left;
+}
+#rightbtn{
+    position: absolute;
+    right: 0;
+    
+}
+.arrowbtn{
+    position: absolute;
+    align-self: center;
+    top: 14vh;
+    padding: 17vh 2vw;
+    margin: 0 0.5vw;
+    background-color: transparent;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    border: 0;
+}
+.bgimages{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    overflow: hidden;
+}
+.backgroundimage{
+    display: inline;
+   
+    
+}

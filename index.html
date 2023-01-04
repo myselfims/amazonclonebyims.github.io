@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping site in India: Shop Online for Mobiles, Books, Watches,
+      Shoes and More - Amazon.in
+    </title>
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+
+      *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 0.3vw;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        font-family: 'Karla', sans-serif;
+        font-weight: bold;
+        position: fixed;
+        margin-top: -8vh;
+        z-index: 10;
+    }
+    .logodiv{
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        margin-right: 0.2vw;
+        border: 0.1vw solid rgb(0, 0, 0);
+        border-radius: 0.1vw;
+        padding: 0.3vw;
+    }
+    .logodiv:hover{
+        border: 0.1vw solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .in{
+        display: inline;
+        align-self: center;
+    }
+    .afterlogo{
+        font-size: 0.9vw;
+        border: 0.1vw solid rgb(0, 0, 0);
+        border-radius: 0.1vw;
+        padding: 1vh;
+    }
+    .afterlogo:hover{
+        border: 0.1vw solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .hellotext{
+        display: block;
+    }
+    
+    .logo{
+        width: 7vw;
+        display: inline;
+    }
+    .locationicon{
+        display: inline;
+    }
+    .searchbar{
+        display: inline-flex;
+        background-color: white;
+        height: 6vh;
+        width: 55vw;
+        border-radius: 0.5vw;
+        margin-left: 1vw;
+        align-self: center;
+        border: 0.2vw solid black;
+    }
+    .searchbox{
+        width: 48vw;
+        font-size: 1vw;
+        border: 0;
+    }
+    .gobtn{
+        background: url("Images/search icon.png");
+        width: 4vw;
+        float: right;
+        background-size: 2vw;
+        background-color: rgb(249, 216, 84);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0vw 0.5vw 0.5vw 0vw;
+        border: white;
+        cursor: pointer;
+    }
+    .categorylist{
+        margin: 0;
+        padding: 0;
+        border-radius: 0.5vw 0vw 0vw 0.5vw;
+        background-color: rgb(226, 226, 226);
+        border: 0;
+    }
+    .categorylist:hover{
+        background-color: rgba(186, 185, 185, 0.767);
+        cursor: pointer;
+    }
+    option{
+        background-color: white;
+    }
+    .flagspan{
+        margin-left: 1vw;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 1vw;
+        border: 0.1vw solid rgb(0, 0, 0);
+        border-radius: 0.1vw;
+    }
+    .flag{
+        width: 1.5vw;
+    }
+    .flagspan:hover{
+        border: 0.1vw solid white;
+        cursor: pointer;
+    }
+    .signtext{
+        display: block;
+    }
+    .signdiv{
+        font-size: 0.9vw;
+        border: 0.1vw solid rgb(0, 0, 0);
+        cursor: pointer;
+        margin-left: 0.2vw;
+        padding: 1vh;
+    }
+    .signdiv:hover{
+        border: 0.1vw solid white;
+        cursor: pointer;
+    }
+    .returndiv{
+        font-size: 0.9vw;
+        border: 0.1vw solid rgb(0, 0, 0);
+        cursor: pointer;
+        margin-left: 0.2vw;
+        padding: 1vh;
+    }
+    .returndiv:hover{
+        border: 0.1vw solid white;
+        cursor: pointer;
+    }
+    .cart{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        border: 0.1vw solid rgb(0, 0, 0);
+        border-radius: 0.1vw;
+        padding-right: 0.6vw;
+    }
+    .cart:hover{
+        border: 0.1vw solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .cartvalue{
+        margin-left: -1.6vw ;
+        color: orange;
+        margin-bottom: 3vh;
+    }
+    .carticon{
+        width: 3vw;
+        display: inline;
+        margin-left: 0.5vw;
+    }
+    .carttext{
+        display: inline-flex;
+        margin-top: 3.3vh;
+        margin-left: 0.5vw;
+    }
+    .secondnav{
+        background-color: rgb(52, 71, 75);
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        padding: 0.3vh;
+        font-family: 'Karla', sans-serif;
+        margin-top: 8vh;
+    }
+    .secondnavlist{
+        color: white;
+        display: inline;
+        margin: 0.1vw;
+        border: 0.1vw solid rgb(52, 71, 75);
+        border-radius: 0.1vw;
+        padding: 0.6vh;
+     
+    }
+    .secondnavlist:hover{
+        border: 0.1vw solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    .backgroundimage{
+        width: 99vw;
+        cursor: pointer;
+    }
+    .prodcont{
+        display: flex;
+        margin-top: -50vh;
+    }
+    .products{
+        background-color: white;
+        margin: 0.7vw;
+        height: 60vh;
+        width: 22vw;
+        font-size: 0.8vw;
+        font-family: 'Karla', sans-serif;
+        padding: 1vw;
+    }
+    .productsimage{
+        width: 8.5vw;
+        margin-top: 0.4vw;
+        height: 14vh;
+        margin-right: 0.9vw;
+    }
+    .productsimage:hover{
+        box-shadow: 0vw 0vw 0.6vw 0.1vw;
+        cursor: pointer;
+    }
+    .productpics{
+        display: inline-block;
+        margin: 0.5vw;
+    }
+    .signindiv{
+        background-color: white;
+        margin-top: 1.5vh;
+        padding: 1vw;
+        font-family: 'Karla', sans-serif;
+        height: 23vh;
+        margin: 0.7vw;
+      
+    
+    }
+    .signindiv h1{
+        font-size: 1.5vw;
+    }
+    .signinbtn{
+        width: 20vw;
+        background-color: rgb(249, 216, 84);
+        margin-top: 3vh;
+        height: 4vh;
+        border-radius: 0.5vw;
+    }
+    #focus{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.409);
+        margin-top: 0vh;
+        visibility: hidden;
+    }
+    #leftbtn{
+        float: left;
+    }
+    #rightbtn{
+        position: absolute;
+        right: 0;
+        
+    }
+    .arrowbtn{
+        position: absolute;
+        align-self: center;
+        top: 14vh;
+        padding: 17vh 2vw;
+        margin: 0 0.5vw;
+        background-color: transparent;
+        border-radius: 0.3vw;
+        cursor: pointer;
+        border: 0;
+    }
+    .bgimages{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        overflow: hidden;
+    }
+    .backgroundimage{
+        display: inline;
+       
+        
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logodiv">
+          <img class="logo" src="Images/amazon logoo.png" alt="" />
+          <p class="in">.in</p>
+        </div>
+
+        <div class="afterlogo">
+          <span class="hellotext">Hello</span>
+          <span class="accountlisttext">Select your address</span>
+        </div>
+        <div onclick="addBorder()" class="searchbar" id="searchbar">
+          <select class="categorylist" name="categorylist">
+            <option value="All Category">All Category</option>
+            <option value="All Category">Alexa Skills</option>
+            <option value="All Category">Amazon Devices</option>
+            <option value="All Category">Amazon Fashion</option>
+            <option value="All Category">Amazon Pharmacy</option>
+            <option value="All Category">Appliances</option>
+            <option value="All Category">Apps & Games</option>
+            <option value="All Category">Baby</option>
+            <option value="All Category">Car & Motorbikes</option>
+            <option value="All Category">Clothing & Acceseries</option>
+            <option value="All Category">Collectibles</option>
+            <option value="All Category">Computers & Acceseries</option>
+            <option value="All Category">Deals</option>
+            <option value="All Category">Electronics</option>
+            <option value="All Category">Furniture</option>
+            <option value="All Category">Garden & Outdoors</option>
+            <option value="All Category">Gift Cards</option>
+          </select>
+          <input class="searchbox" type="text" />
+          <button class="gobtn"></button>
+        </div>
+        <span class="flagspan"
+          ><img class="flag" src="Images/indian flag.png" alt=""
+        /></span>
+        <div class="signdiv">
+          <span class="signtext">Hello,Sign in</span>
+          <span class="accountlisttext">Account & Lists</span>
+        </div>
+        <div class="returndiv">
+          <span class="signtext">Return</span>
+          <span class="accountlisttext">& Orders</span>
+        </div>
+        <div class="cart">
+            <img class="carticon" src="Images/carticon.png" alt="">
+            <p class="cartvalue">0</p>
+            <p class="carttext">Cart</p>
+          </div>
+      </nav>
+      <div class="secondnav">
+        <p class="secondnavlist">All</p>
+        <p class="secondnavlist">Best Sellers</p>
+        <p class="secondnavlist">Mobiles</p>
+        <p class="secondnavlist">Customer Service</p>
+        <p class="secondnavlist">Today's Deals</p>
+        <p class="secondnavlist">Fashion</p>
+        <p class="secondnavlist">Electronics</p>
+        <p class="secondnavlist">Prime</p>
+        <p class="secondnavlist">Home & Kitchen</p>
+        <p class="secondnavlist">Amazon Pay</p>
+        <p class="secondnavlist">New Releases</p>
+        <p class="secondnavlist">Computers</p>
+      </div>
+    </header>
+    <main>
+      <div onmousewheel="Focus()" onclick="Focus()" id="focus"></div>
+      <button class="arrowbtn" id="leftbtn"><</button>
+      <button onclick="ChangeImage()" class="arrowbtn" id="rightbtn">></button>
+      <div class="bgimages">
+      <img class="backgroundimage" src="Images/background.jpg" alt="" />
+      <img class="backgroundimage" src="Images/background.jpg" alt="" />
+      </div>
+      <div class="prodcont">
+        <div class="products">
+          <h1>Top picks for your home</h1>
+          <div class="productpics">
+            <img class="productsimage" src="Images/ac.jpg" alt="" />
+            <p>ACs</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/freezer.jpg" alt="" />
+            <p>Refregirators</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/micravave.jpg" alt="" />
+            <p>Microvave</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/washingmachine.jpg" alt="" />
+            <p>Washing machine's</p>
+          </div>
+        </div>
+        <div class="products">
+          <h1>Up to 70% off | Clearance store</h1>
+          <div class="productpics">
+            <img class="productsimage" src="Images/ac.jpg" alt="" />
+            <p>ACs</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/freezer.jpg" alt="" />
+            <p>Refregirators</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/micravave.jpg" alt="" />
+            <p>Microvave</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/washingmachine.jpg" alt="" />
+            <p>Washing machine's</p>
+          </div>
+        </div>
+        <div class="products">
+          <h1>Automotive essentials | Up to 60% off</h1>
+          <div class="productpics">
+            <img class="productsimage" src="Images/ac.jpg" alt="" />
+            <p>ACs</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/freezer.jpg" alt="" />
+            <p>Refregirators</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/micravave.jpg" alt="" />
+            <p>Microvave</p>
+          </div>
+          <div class="productpics">
+            <img class="productsimage" src="Images/washingmachine.jpg" alt="" />
+            <p>Washing machine's</p>
+          </div>
+        </div>
+        <div class="signindiv">
+          <h1>Sign in for your best experience</h1>
+          <button class="signinbtn">Sign in securely</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+
+    
+function addBorder(){
+  document.getElementById("searchbar").style.border = "0.2vw solid rgb(249, 216, 84)";
+  document.getElementById("focus").style.visibility = "visible";
+}
+function Focus(){
+  document.getElementById("searchbar").style.border = "0.2vw solid black";
+  document.getElementById("focus").style.visibility = "hidden";
+}
+function ChangeImage(){
+  document.getElementsByClassName("backgroundimage").source="Images/ac.jpg"
+}
+
+  </script>
+</html>
